@@ -1,0 +1,132 @@
+.yoga-container {
+  padding: 40px;
+  background: linear-gradient(to right, #0b1e43, #4168ac);
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.yoga-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.yoga-container > p {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.pose-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.pose-section.left .pose-image-wrapper {
+  order: 1;
+}
+.pose-section.left .pose-info {
+  order: 2;
+}
+
+.pose-section.right .pose-image-wrapper {
+  order: 2;
+}
+.pose-section.right .pose-info {
+  order: 1;
+}
+
+.pose-image-wrapper {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.pose-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.pose-info {
+  flex: 1;
+  min-width: 300px;
+  
+}
+
+.pose-info h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #a7d8ff;
+}
+
+.pose-desc {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+}
+
+.pose-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffdd57;
+}
+
+.pose-info ol {
+  padding-left: 20px;
+}
+
+.pose-info li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.tracker-section {
+  background-color: #061430;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tracker-section button {
+  margin: 8px;
+  padding: 10px 16px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tracker-section button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.progress-bar {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.day-box {
+  width: 28px;
+  height: 28px;
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.day-box.done {
+  background-color: #34d399;
+  border-color: #10b981;
+  color: white;
+}

@@ -1,0 +1,136 @@
+/* General body styles for dark theme */
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 10;
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Container for the breathing circle */
+.breathing-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+  color: white;
+  
+
+}
+
+/* Text displayed during breathing phases */
+.breathing-text {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #e0e0e0;
+  animation: textFadeInOut 12s ease-in-out infinite;
+  position:absolute;
+}
+
+/* Breathing circle animations */
+.breathing-circle {
+  width: 250px;
+  height: 250px;
+ background-color: transparent;
+  border-radius: 50%;
+  transition: transform 4s ease-in-out;
+  box-shadow: 0 0 80px rgba(1, 32, 23, 0.815);
+}
+
+/* Animation for expanding the circle during inhale */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5); /* Expanding for inhale */
+  }
+  50% {
+    transform: scale(1); /* Holding, no change */
+  }
+  75% {
+    transform: scale(1); /* Exhaling */
+  }
+  100% {
+    transform: scale(0.8); /* Circle shrinks slightly at the end */
+  }
+}
+
+/* Smooth fade-in for the page */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Text fade in and out for breathing instructions */
+@keyframes textFadeInOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .breathing-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .breathing-text {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+@keyframes multiBreathe {
+  0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.9;
+  }
+  50% {
+      transform: translate(-50%, -50%) scale(1.2);
+      opacity: 0.7;
+  }
+  100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.9;
+  }
+}

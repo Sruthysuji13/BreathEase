@@ -1,0 +1,201 @@
+/* Ensure root and page containers allow scrolling */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height:100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+/* Main container for welcome page */
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  
+  background-image: url('C:\Users\Sruthy suji\Documents\meditation-app\frontend\public\wel.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+}
+
+/* Top section of the welcome screen */
+.welcome-container {
+  width: 100%;
+  max-width: 900px;
+  background: linear-gradient(
+    135deg,
+    rgba(11, 72, 113, 0),
+    rgba(28, 182, 193, 0),
+    rgba(255, 255, 255, 0)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+/* Glass effect for card content */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.361);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 700px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  width: 100%;
+}
+
+/* Text styles */
+.welcome-title {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.welcome-quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #334155;
+}
+
+.calming-texts p {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: #050b13;
+   font-style: italic;
+}
+.calming-texts h2 {
+  margin: 6px 0;
+  font-size: 1.8rem;
+  color: #181a1c;
+}
+
+/* Quiz button */
+.quiz-button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #074a5d;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-button:hover {
+  background-color: #097a94;
+}
+
+/* Recommendation text */
+.recommendation-text {
+  font-size: 1.1rem;
+  margin-top: 50px;
+  color: #0f172a;
+}
+
+
+
+.highlight {
+  background-color: #e9780e;
+  color: #e6e8ef;
+}
+
+/* Benefits section styling */
+.benefits-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1500px;
+  width: 100%;
+  padding: 0 30px 10px;
+  box-sizing: border-box;
+}
+
+/* Each benefit card */
+.benefit-card {
+  background: rgba(255, 255, 255, 0.596);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px 20px;
+  color: rgb(28, 3, 3);
+  font-size: 1.1rem;
+  width: 100px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.477);
+  transition: transform 0.5s ease;
+  animation: fadeInUp 0.8s forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.benefit-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #2f2f2f;
+}
+
+.benefit-text {
+  font-size: 1rem; /* Match .welcome-quote font size */
+  font-weight: normal;
+  color: #333;
+  line-height: 1.6;
+}
+.quiz-section {
+
+  width: 100%;
+  max-width: 900px;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 20px;
+   background: linear-gradient(
+    135deg,
+      rgba(39, 123, 179, 0.952),
+    rgba(71, 219, 230, 0.7),
+    rgba(255, 255, 255, 0.7)
+  );
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.566);
+  backdrop-filter: blur(6px); /* subtle blur for glassy look */
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+

@@ -1,0 +1,90 @@
+/* meditation.css */
+.meditation-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120%;          
+  width: 100%;           /* full viewport width */
+  background: #0d526f;    /* solid blue background */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.meditation-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding:10px 40px;    /* increased padding for better spacing */
+  background: #094646;    /* container background changed to a darker blue */
+  border-radius: 0;       /* no rounding since it covers full page */
+  box-shadow: none;       /* remove shadow */
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  color: white;           /* text color adjusted for dark bg */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Keep other styles as they are, but adjust colors for readability */
+
+.meditation-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #cce6ff;         /* lighter blue for contrast */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.meditation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 70px;
+    width: 100%;
+  height: 100%;
+}
+
+.meditation-card {
+  background: #0f3750;    /* dark blue card background */
+  padding: 20px;
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #d0e8ff;         /* lighter text */
+}
+
+.meditation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(255, 255, 255, 0.2);
+}
+
+.meditation-card h3 {
+  font-size: 1.4rem;
+  color: #a4c8ff;
+  margin-bottom: 10px;
+}
+
+.meditation-card p {
+  font-size: 1rem;
+  color: #b8d1ff;
+  margin-bottom: 15px;
+}
+
+.meditation-card button {
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  background-color: #3fe8e8;
+  color: #0f172a;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.meditation-card button:hover {
+  background-color: #097373;
+  color: white;
+}

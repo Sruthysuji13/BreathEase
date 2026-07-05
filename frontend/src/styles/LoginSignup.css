@@ -1,0 +1,83 @@
+/* Fullscreen overlay for modal background */
+.login-signup-wrapper {
+  position: fixed;
+  top: 0%;
+  left: 23%;
+  width: 240vh;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+}
+
+/* Main login/signup form container */
+.form-box {
+  background: rgba(170, 203, 241, 0.726); /* glassmorphism effect */
+  border-radius: 20px;
+  padding: 50px;
+  width:100%;
+  height: 60%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #0e0e0e;
+  text-align: center;
+}
+
+/* Input fields */
+.form input {
+  width: 100%;
+  padding: 12px;
+  padding-right: 1px;
+  padding-left:2px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.705);
+  border: none;
+  border-radius: 10px;
+  color: #272424;
+  font-size: 16px;
+}
+
+/* Placeholder styling */
+.form input::placeholder {
+  color: #191818;
+}
+
+/* Login button */
+.form button {
+  width: 101%;
+  padding: 13px;
+  padding-right:15px;
+  background-color: #112049; /* Deep blue */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #296994;
+}
+
+/* Toggle text */
+.form p {
+  margin-top: 20px;
+  color: #110505;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.form span {
+  color: #041529;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+

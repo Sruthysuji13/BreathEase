@@ -1,0 +1,75 @@
+.sleep-container {
+  padding: 40px 20px;
+  background: #0d1b2a;
+  color: #f0f8ff;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.sleep-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sleep-container p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  color: #d0d8e0;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.story-card {
+  background: #1b263b;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+}
+
+.story-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.story-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+}
+
+.tag.story {
+  background-color: #8ecae6;
+}
+
+.tag.delta {
+  background-color: #6a9e5d;
+}
+
+.tag.theta {
+  background-color: #9c89b8;
+}
+
+audio {
+  width: 100%;
+  margin-top: 15px;
+}

@@ -1,0 +1,311 @@
+/* Full-screen gradient/image background */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(2, 18, 59);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding-left: 2rem;
+  overflow-y: auto;
+}
+
+/* Right-aligned decorative image */
+.side-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100vh; /* Adjust as needed */
+  max-width: 50vw;
+  object-fit: contain;
+  opacity: 0.8; /* Optional: softens the image */
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+
+/* Example for footer */
+.home-footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+
+
+/* Top-right auth buttons */
+.auth-buttons {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 10;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  background-color: transparent;
+  color: #f1eded;
+  font-weight: 600;
+  padding: 10px 40px;
+  border: 2px solid #a6d9f1;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: #093932;
+}
+
+.auth-buttons button:hover {
+  background-color: #f8fcfa;
+  color: rgb(14, 1, 1);
+}
+
+/* Welcome Text */
+.welcome-content {
+  z-index: 5;
+  padding: 1rem 2rem;
+  color: #264653;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  max-width: 500px;
+}
+
+.welcome-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #e5e7e7;
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.welcome-content .quote {
+  font-size: 1.2rem;
+  /* font-style: italic; */
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Get Started button */
+.get-started-btn {
+  background: linear-gradient(to right, #838ce4, #7f8485);
+  border: none;
+  padding: 14px 32px;
+  font-size: 1rem;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.get-started-btn:hover {
+  transform: scale(1.05);
+}
+
+.home-footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #f6f3f3;
+}
+/* Bubbles Container */
+.floating-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow clicks through */
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Generic bubble style */
+/* Updated bubble base style */
+.bubble {
+  position: absolute;
+  bottom: -120px;
+  background: rgba(173, 216, 230, 0.8); /* Light blue with more opacity */
+  border-radius: 50%;
+  animation: floatBubble 18s linear infinite;
+  box-shadow: 0 0 10px rgba(173, 216, 230, 0.6);
+}
+
+/* Bigger bubbles with varied positions and delays */
+.bubble1 { width: 40px; height: 40px; left: 5%; animation-delay: 0s; }
+.bubble2 { width: 30px; height: 30px; left: 15%; animation-delay: 2s; }
+.bubble3 { width: 50px; height: 50px; left: 25%; animation-delay: 4s; }
+.bubble4 { width: 35px; height: 35px; left: 40%; animation-delay: 1s; }
+.bubble5 { width: 45px; height: 45px; left: 55%; animation-delay: 3s; }
+.bubble6 { width: 38px; height: 38px; left: 65%; animation-delay: 6s; }
+.bubble7 { width: 34px; height: 34px; left: 75%; animation-delay: 5s; }
+.bubble8 { width: 42px; height: 42px; left: 85%; animation-delay: 7s; }
+.bubble9 { width: 36px; height: 36px; left: 30%; animation-delay: 2.5s; }
+.bubble10 { width: 48px; height: 48px; left: 90%; animation-delay: 6.5s; }
+
+
+/* Animation keyframes */
+@keyframes floatBubble {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-50vh) translateX(20px);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(-20px);
+    opacity: 0;
+  }
+}
+/* ─────────── NAVBAR ─────────── */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.35);        /* translucent so bg shows through */
+  backdrop-filter: blur(6px);
+  z-index: 20;    
+  overflow: hidden;                         /* above everything */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f1faff;
+  letter-spacing: 1px;
+}
+
+.nav-get-started {
+  background: linear-gradient(135deg, #6aa9ff, #8ed1fc);
+  border: none;
+  padding: 0.75rem 2.25rem;
+  border-radius: 30px;
+  color: #02122b;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+
+.nav-get-started:hover {
+  transform: scale(1.05);
+}
+
+/* ───────── BENEFIT CARDS ───────── */
+.benefit-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 2rem;  /* Optional */
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  justify-content:stretch;
+}
+
+
+
+.benefit-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 1.25rem;
+  color: #f0f9ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  transition: transform 0.25s;
+   
+  
+  
+  flex: 1 1 22%; /* flex-grow, flex-shrink, flex-basis */
+  min-width: 200px;
+  margin: 0 0.5rem;
+  box-sizing: border-box;
+
+
+}
+
+.benefit-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.benefit-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ─────────── MODAL POPUP ─────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 420px;
+  background: #0d223a;
+  border-radius: 20px;
+  padding: 2rem;
+  color: #f1faff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  position: relative;
+  animation: popIn 0.35s ease;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+
+@keyframes popIn {
+  0%   { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1);   opacity: 1; }
+}
+/* Add to Home.css */
+
+
+

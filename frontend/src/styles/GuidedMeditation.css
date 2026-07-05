@@ -1,0 +1,142 @@
+.guided-meditation-container {
+  padding: 40px;
+  background: linear-gradient(to right, #0b1e43, #4168ac);
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.guided-meditation-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.guided-meditation-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #d8eaff;
+}
+
+.med-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Styling */
+.meditation-section {
+  margin-bottom: 50px;
+}
+
+.meditation-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ffda9e;
+  border-left: 5px solid #ffb347;
+  padding-left: 15px;
+}
+
+/* Grid of Cards */
+.session-cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Individual Card */
+.session-card {
+  background-color: #294c7b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+  border-left: 4px solid #68a6ff;
+}
+
+.session-card:hover {
+  transform: translateY(-5px);
+  background-color: #335d95;
+}
+
+/* Titles and Text */
+.session-card h3 {
+  color: #a7d8ff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.session-card p {
+  margin-bottom: 15px;
+  color: #e2ecf7;
+  font-size: 0.95rem;
+}
+
+/* Audio Player */
+audio {
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  .guided-meditation-container {
+    padding: 20px;
+  }
+
+  .guided-meditation-container h1 {
+    font-size: 2rem;
+  }
+
+  .meditation-section h2 {
+    font-size: 1.4rem;
+  }
+}
+.accordion-section {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: #1d3557;
+  overflow: hidden;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #2b4865;
+  color: #ffda9e;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 1px solid #ffb347;
+  transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+  background-color: #3a5f8a;
+}
+
+.accordion-header span {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.accordion-content {
+  padding: 20px;
+  background-color: #274060;
+}
+
+.session-cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Keep existing .session-card and other styles as is */

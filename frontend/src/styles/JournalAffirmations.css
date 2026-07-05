@@ -1,0 +1,138 @@
+.journal-container {
+  padding: 40px;
+  background: linear-gradient(to right, #182848, #4b6cb7);
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.journal-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.journal-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.affirmation-box {
+  background-color: #294a78;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.affirmation-box h3 {
+  color: #aee1f9;
+  margin-bottom: 10px;
+}
+
+.affirmation-box p {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #e0f7ff;
+}
+
+.journal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.journal-form label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.journal-form textarea {
+  resize: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.journal-form button {
+  background-color: #1d3557;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.journal-form button:hover {
+  background-color: #457b9d;
+}
+
+.thank-you {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #2a9d8f;
+  border-radius: 10px;
+  text-align: center;
+}
+.affirmation-input {
+  width: 98%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #f1f1f1;
+  color: #333;
+  margin-top: 8px;
+}
+
+.entry-history {
+  margin-top: 40px;
+}
+
+.entry-history h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #aee1f9;
+}
+
+.entry-card {
+  background-color: #294a78;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.entry-card p {
+  margin: 10px 0;
+  color: #e0f7ff;
+  line-height: 1.5;
+}
+
+.timestamp {
+  font-size: 0.85rem;
+  color: #cdeaff;
+}
+
+.edit-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ffb703;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #1d3557;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #ffaa00;
+}

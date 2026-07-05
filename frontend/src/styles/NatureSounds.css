@@ -1,0 +1,87 @@
+.nature-sounds-container {
+  padding: 40px;
+  color: #ffffff;
+  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nature-sounds-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.nature-sounds-container p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.search-form {
+  display: flex;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  outline: none;
+}
+
+.search-form button {
+  background-color: #4a90e2;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #357ABD;
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.video-card {
+  background: #2a3d4d;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  color: #a7d8ff;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #cce4ff;
+}
+.video-card button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #4a90e2;   /* nice blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.video-card button:hover {
+  background-color: #357abd;  /* darker blue on hover */
+}
